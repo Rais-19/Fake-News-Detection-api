@@ -1,4 +1,4 @@
-Fake News Detection API 📰
+Fake News Detection API 
 
 A machine learning–based system that classifies news articles as REAL or FAKE using NLP and Logistic Regression.
 The backend is built with FastAPI, and the frontend uses Streamlit.
@@ -73,25 +73,84 @@ Dataset size: ~6,300 articles
 Accuracy: ~90% (train), ~83% (test)
 
 Limitations
+1. Small Training Dataset
 
-Small and dated dataset
+Only ~6,335 articles used for training
+May not generalize well to diverse news topics
+Limited to vocabulary seen during training
 
-Binary classification only (REAL / FAKE)
+2. Simple Model Architecture
 
-English language only
+Single algorithm (Logistic Regression)
+No deep learning or transformer models
+No contextual understanding (unlike BERT, GPT)
 
-No source credibility or fact verification
+3. No Source Verification
 
-Not suitable for real-world fact-checking
+Doesn't check the credibility of news sources
+Doesn't verify facts against databases
+No cross-referencing with trusted media
+
+4. Language Support
+
+English only
+No multilingual support
+
+5. Temporal Bias
+
+Trained on older news articles
+May not detect modern misinformation tactics
+No adaptation to evolving fake news patterns
+
+6. Binary Classification Only
+
+Only outputs FAKE or REAL
+No nuance (partially true, misleading, satire, opinion)
+No detection of clickbait or sensationalism
+
 
 Future Improvements
+To make this production-ready, consider:
 
-Larger and more diverse datasets
+Larger Dataset
 
-Transformer-based models (BERT, RoBERTa)
+Use datasets with 100K+ articles
+Include diverse topics (politics, health, tech, sports)
+Regularly update with fresh data
 
-Explainability (SHAP / LIME)
 
-Multi-class labels (satire, misleading, opinion)
+Advanced Models
 
-Source credibility analysis
+Implement transformer models (BERT, RoBERTa)
+Ensemble methods (combine multiple models)
+Deep learning architectures (LSTM, CNN)
+
+
+Additional Features
+
+Source credibility scoring
+Claim verification against fact-check databases
+Sentiment analysis
+Readability metrics
+Image/video analysis (deepfake detection)
+
+
+Multi-class Classification
+
+Detect satire, opinion, clickbait
+Identify partially true claims
+Flag misleading headlines
+
+
+Explainability
+
+Show which words influenced the prediction
+LIME or SHAP values
+Highlight suspicious phrases
+
+
+Real-time Learning
+
+Continuous model updates
+Feedback loop from users
+A/B testing different models
