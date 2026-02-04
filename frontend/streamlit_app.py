@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 import os
 # API Configuration
-API_URL = os.getenv("API_URL", "https://fake-news-detection-fastapi-e0xk.onrender.com/")
+API_URL = os.getenv("API_URL", "https://mart-sales-predictor-fastapi.onrender.com/")
 
 # Page configuration
 st.set_page_config(
