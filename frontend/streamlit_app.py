@@ -2,9 +2,9 @@ import streamlit as st
 import requests
 import json
 from datetime import datetime
-
+import os
 # API Configuration
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 # Page configuration
 st.set_page_config(
