@@ -1,4 +1,14 @@
-Fake News Detection API 
+## Fake News Detection API 
+
+## Live App
+
+**Interactive Demo (Streamlit UI)**  
+➜ https://fake-news-detection-ui.onrender.com/
+
+**API Endpoint (FastAPI backend)**  
+➜ https://coffee-sales-ml.onrender.com  
+- OpenAPI docs: https://fake-news-detection-fastapi-e0xk.onrender.com/docs
+- Health check: https://fake-news-detection-fastapi-e0xk.onrender.com/
 
 A machine learning–based system that classifies news articles as REAL or FAKE using NLP and Logistic Regression.
 The backend is built with FastAPI, and the frontend uses Streamlit.
